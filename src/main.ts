@@ -2,10 +2,9 @@ import Vue from 'vue';
 
 import 'normalize.css';
 import ElementUI from 'element-ui';
-import SvgIcon from 'vue-svgicon';
 import '@/styles/index.scss';
-import '@/icons/components';
 import '@/permission';
+import './icons';
 
 /**
  * This project originally used easy-mock to simulate data requests,
@@ -21,12 +20,11 @@ import store from '@/store';
 import router from '@/router';
 import '@/registerServiceWorker';
 
+
+
+
 Vue.use(ElementUI);
-Vue.use(SvgIcon, {
-  tagName: 'svg-icon',
-  defaultWidth: '1em',
-  defaultHeight: '1em',
-});
+
 
 Vue.config.productionTip = false;
 

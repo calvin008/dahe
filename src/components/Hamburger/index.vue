@@ -1,6 +1,6 @@
 <template>
   <div :class="[{'is-active': isActive}, 'hamburger-container']" @click="toggleClick">
-    <svg-icon name="hamburger" width="20" height="20" />
+  <svg-icon icon-class='zu' class='icon' aria-hidden="true"></svg-icon>
   </div>
 </template>
 
@@ -18,7 +18,9 @@ export default class Hamburger extends Vue {
 .hamburger-container {
   cursor: pointer;
 }
-
+.icon {
+  color:#000
+}
 .hamburger-container.is-active {
   transform: rotate(180deg);
 }

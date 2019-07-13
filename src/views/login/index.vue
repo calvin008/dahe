@@ -4,13 +4,13 @@
       <h3 class="title">vue3-admin</h3>
       <el-form-item prop="username">
         <span class="svg-container">
-          <svg-icon name="user" />
+          <svg-icon icon-class="user" />
         </span>
         <el-input v-model="loginForm.username" name="username" type="text" auto-complete="on" placeholder="username" />
       </el-form-item>
       <el-form-item prop="password">
         <span class="svg-container">
-          <svg-icon name="password" />
+          <svg-icon icon-class="password" />
         </span>
         <el-input
           :type="pwdType"
@@ -144,6 +144,7 @@ export default class Login extends Vue {
   .el-input {
     display: inline-block;
     width: 85%;
+    
   }
 
   .el-form-item {
@@ -170,6 +171,7 @@ export default class Login extends Vue {
     vertical-align: middle;
     width: 30px;
     display: inline-block;
+    margin:0 5px;
   }
 
   .title {
@@ -181,14 +183,6 @@ export default class Login extends Vue {
     font-weight: bold;
   }
 
-  .show-pwd {
-    position: absolute;
-    right: 10px;
-    top: 7px;
-    font-size: 16px;
-    color: $darkGray;
-    cursor: pointer;
-    user-select: none;
-  }
+  
 }
 </style>

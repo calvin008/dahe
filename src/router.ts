@@ -30,18 +30,30 @@ export default new Router({
       component: Layout,
       redirect: '/dashboard',
       name: 'Dashboard',
-      meta: { hidden: true },
+      meta: { title: '主页', icon: 'zhuye'},
       children: [{
         path: 'dashboard',
-        component: () => import(/* webpackChunkName: "dashboard" */ '@/views/dashboard/index.vue'),
+        component: () => import(/* webpackChunkName: "Dashboard" */ '@/views/dashboard/index.vue'),
       }],
+    },
+    {
+      path: '/search',
+      component: Layout,
+      children: [
+        {
+          path: 'index',
+          name: 'Search',
+          component: () => import(/* webpackChunkName: "form" */ '@/views/search/index.vue'),
+          meta: { title: '达人搜索', icon: 'tubiaozhizuomoban-x-' },
+        },
+      ],
     },
     {
       path: '/example',
       component: Layout,
       redirect: '/example/table',
       name: 'Example',
-      meta: { title: 'Example', icon: 'example' },
+      meta: { title: '成长榜单', icon: 'chengchang' },
       children: [
         {
           path: 'table',
@@ -57,24 +69,13 @@ export default new Router({
         },
       ],
     },
-    {
-      path: '/form',
-      component: Layout,
-      children: [
-        {
-          path: 'index',
-          name: 'Form',
-          component: () => import(/* webpackChunkName: "form" */ '@/views/form/index.vue'),
-          meta: { title: 'Form', icon: 'form' },
-        },
-      ],
-    },
+    
     {
       path: '/nested',
       component: Layout,
       redirect: '/nested/menu1',
       name: 'Nested',
-      meta: { title: 'Nested', icon: 'nested' },
+      meta: { title: '热门榜单', icon: 'baojifuben2' },
       children: [
         {
           path: 'menu1',
@@ -124,13 +125,27 @@ export default new Router({
         },
       ],
     },
+    
+    {
+      path: '/form',
+      component: Layout,
+      children: [
+        {
+          path: 'index',
+          name: 'Form',
+          component: () => import(/* webpackChunkName: "form" */ '@/views/form/index.vue'),
+          meta: { title: '充值中心', icon: 'chongzhi' },
+        },
+      ],
+    },
+
     {
       path: 'external-link',
       component: Layout,
       children: [
         {
           path: 'https://github.com/calvin008/vue3-admin',
-          meta: { title: 'External Link', icon: 'link' },
+          meta: { title: '个人中心', icon: 'wodedangxuan' },
         },
       ],
     },

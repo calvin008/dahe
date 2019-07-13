@@ -3,8 +3,8 @@
     <template v-if="hasOneShowingChild(item.children, item) && (!onlyOneChild.children || onlyOneChild.meta.noShowingChildren)">
       <app-link :to="resolvePath(onlyOneChild.path)">
         <el-menu-item :index="resolvePath(onlyOneChild.path)" :class="{'submenu-title-noDropdown': !isNest}">
-          <svg-icon v-if="onlyOneChild.meta && onlyOneChild.meta.icon" :name="onlyOneChild.meta.icon" />
-          <svg-icon v-else-if="item.meta && item.meta.icon" :name="item.meta.icon" />
+          <svg-icon v-if="onlyOneChild.meta && onlyOneChild.meta.icon" :icon-class="onlyOneChild.meta.icon" />
+          <svg-icon v-else-if="item.meta && item.meta.icon" :icon-class="item.meta.icon" />
           <span v-if="onlyOneChild.meta && onlyOneChild.meta.title" slot="title">{{onlyOneChild.meta.title}}</span>
           <span v-else-if="item.meta && item.meta.title" slot="title">{{item.meta.title}}</span>
         </el-menu-item>
@@ -12,7 +12,7 @@
     </template>
     <el-submenu v-else :index="resolvePath(item.path)">
       <template slot="title">
-        <svg-icon v-if="item.meta && item.meta.icon" :name="item.meta.icon" />
+        <svg-icon v-if="item.meta && item.meta.icon" :icon-class="item.meta.icon" />
         <span v-if="item.meta && item.meta.title" slot="title">{{item.meta.title}}</span>
       </template>
       <sidebar-item
@@ -95,6 +95,7 @@ export default class SidebarItem extends Vue {
   .nest-menu .el-submenu>.el-submenu__title,
   .el-submenu .el-menu-item {
     background-color: $subMenuBg !important;
+   
 
     &:hover {
       background-color: $subMenuHover !important;
@@ -107,7 +108,7 @@ export default class SidebarItem extends Vue {
     .submenu-title-noDropdown {
       padding-left: 10px !important;
       position: relative;
-
+     
       .el-tooltip {
         padding: 0 10px !important;
       }
@@ -118,6 +119,7 @@ export default class SidebarItem extends Vue {
 
       &>.el-submenu__title {
         padding-left: 10px !important;
+        
 
         .el-submenu__icon-arrow {
           display: none;
@@ -130,6 +132,7 @@ export default class SidebarItem extends Vue {
 
 <style lang="scss" scoped>
 .svg-icon {
-  margin-right: 16px;
-}
+  margin-right: 14px;
+  font-size:1.4rem;
+  }
 </style>

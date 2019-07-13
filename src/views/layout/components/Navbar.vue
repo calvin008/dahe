@@ -1,7 +1,6 @@
 <template>
   <div class="navbar">
     <hamburger :toggle-click="toggleSideBar" :is-active="sidebar.opened" class="hamburger-container"/>
-    <breadcrumb />
     <el-dropdown class="avatar-container" trigger="click">
       <div class="avatar-wrapper">
         <img :src="avatar + '?imageView2/1/w/80/h/80'" class="user-avatar">
@@ -22,7 +21,6 @@
 </template>
 
 <script lang="ts">
-import Breadcrumb from '@/components/Breadcrumb/index.vue';
 import Hamburger from '@/components/Hamburger/index.vue';
 import { Component, Vue } from 'vue-property-decorator';
 import { AppModule } from '@/store/modules/app';
@@ -30,8 +28,7 @@ import { UserModule } from '@/store/modules/user';
 
 @Component({
   components: {
-    Breadcrumb,
-    Hamburger,
+   Hamburger,
   },
 })
 export default class Navbar extends Vue {

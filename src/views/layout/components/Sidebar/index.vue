@@ -4,8 +4,8 @@
       :show-timeout="200"
       :default-active="$route.path"
       :collapse="isCollapse"
-      background-color="#304156"
-      text-color="#bfcbd9"
+      background-color="#fff"
+      text-color="#000"
       active-text-color="#409EFF"
       mode="vertical"
     >
@@ -72,5 +72,6 @@ export default class SideBar extends Vue {
   border: none;
   height: 100%;
   width: 100% !important;
+  
 }
 </style>
