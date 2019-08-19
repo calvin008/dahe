@@ -38,7 +38,6 @@ import { Component, Vue, Watch } from 'vue-property-decorator';
 import { UserModule } from '@/store/modules/user';
 import { Route } from 'vue-router';
 import { ElForm } from 'element-ui/types/form';
-
 const validateUsername = (rule: any, value: string, callback: any) => {
   if (!isValidUsername(value)) {
     callback(new Error('请输入正确的用户名'));
@@ -53,7 +52,6 @@ const validatePass = (rule: any, value: string, callback: any) => {
     callback();
   }
 };
-
 @Component
 export default class Login extends Vue {
   private loginForm = {
@@ -67,14 +65,12 @@ export default class Login extends Vue {
   private loading = false;
   private pwdType = 'password';
   private redirect: string | undefined = undefined;
-
   @Watch('$route', { immediate: true })
   private OnRouteChange(route: Route) {
     // TODO: remove the "as string" hack after v4 release for vue-router
     // See https://github.com/vuejs/vue-router/pull/2050 for details
     this.redirect = route.query && route.query.redirect as string;
   }
-
   private showPwd() {
     if (this.pwdType === 'password') {
       this.pwdType = '';
@@ -82,7 +78,6 @@ export default class Login extends Vue {
       this.pwdType = 'password';
     }
   }
-
   private handleLogin() {
     (this.$refs.loginForm as ElForm).validate((valid: boolean) => {
       if (valid) {
@@ -103,19 +98,21 @@ export default class Login extends Vue {
 
 <style lang="scss">
 @import "src/styles/variables.scss";
-
 .login-container {
-  .el-input {
-    input {
-      background: transparent;
-      border: 0px;
-      -webkit-appearance: none;
-      color: $lightGray;
-
-      &:-webkit-autofill {
-        box-shadow: 0 0 0px 1000px $loginBg inset !important;
-        -webkit-box-shadow: 0 0 0px 1000px $loginBg inset !important;
-        -webkit-text-fill-color: #fff !important;
+  .el-form-item{
+     border:1px solid #350000;
+     border-radius:5%;
+    .el-input {
+      input {
+        background: transparent;
+        border: 0px;
+        -webkit-appearance: none;
+        color: $lightGray;
+        &:-webkit-autofill {
+          box-shadow: 0 0 0px 1000px $loginBg inset !important;
+          -webkit-box-shadow: 0 0 0px 1000px $loginBg inset !important;
+          -webkit-text-fill-color: #cccccc !important;
+        }
       }
     }
   }
@@ -124,13 +121,12 @@ export default class Login extends Vue {
 
 <style lang="scss" scoped>
 @import "src/styles/variables.scss";
-
 .login-container {
+  
   position: fixed;
   height: 100%;
   width: 100%;
   background-color: $loginBg;
-
   .login-form {
     position: absolute;
     left: 0;
@@ -139,21 +135,17 @@ export default class Login extends Vue {
     max-width: 100%;
     padding: 35px 35px 15px 35px;
     margin: 120px auto;
+    border:1px solid #353535; 
   }
-
   .el-input {
     display: inline-block;
     width: 85%;
     
   }
-
   .el-form-item {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    background: #ffffff;
     color: #454545;
   }
-
   .tips {
     font-size: 14px;
     color: #fff;
@@ -164,7 +156,6 @@ export default class Login extends Vue {
       }
     }
   }
-
   .svg-container {
     padding: 6px 5px 6px 15px;
     color: $darkGray;
@@ -173,7 +164,6 @@ export default class Login extends Vue {
     display: inline-block;
     margin:0 5px;
   }
-
   .title {
     font-size: 26px;
     font-weight: 400;
@@ -182,7 +172,6 @@ export default class Login extends Vue {
     text-align: center;
     font-weight: bold;
   }
-
   
 }
 </style>
