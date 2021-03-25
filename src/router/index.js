@@ -111,10 +111,10 @@ export const asyncRoutes = [
     ],
   },
   {
-    path: '/test',
+    path: '/echart',
     component: Layout,
-    name:'test',
-    redirect: '/test/test1',
+    name:'echart',
+    redirect: '/echart/bar',
     meta: {
       title: '动态路由测试',
       icon: 'test-tube-line',
@@ -122,9 +122,9 @@ export const asyncRoutes = [
     },
     children: [
       {
-        path: 'test1',
-        name: 'Test1',
-        component: () => import('@/views/test/test1/index.vue'),
+        path: 'bar',
+        name: 'Bar',
+        component: () => import('@/views/echart/bar/index.vue'),
         meta: {
           title: '路由测试1',
           icon: 'test-tube-line',
@@ -132,9 +132,9 @@ export const asyncRoutes = [
         },
       },
       {
-        path: 'test2',
-        name: 'Test2',
-        component: () => import('@/views/test/test2/index.vue'),
+        path: 'line',
+        name: 'Line',
+        component: () => import('@/views/echart/line/index.vue'),
         meta: {
           title: '路由测试2',
           icon: 'test-tube-line',
@@ -142,9 +142,9 @@ export const asyncRoutes = [
         },
       },
       {
-        path: 'test3',
-        name: 'Test3',
-        component: () => import('@/views/test/test3/index.vue'),
+        path: 'pie',
+        name: 'Pie',
+        component: () => import('@/views/echart/pie/index.vue'),
         meta: {
           title: '路由测试3',
           icon: 'test-tube-line',

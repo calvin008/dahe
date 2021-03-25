@@ -6,7 +6,6 @@
       v-model:collapsed="collapsed"
       :trigger="null"
       collapsible
-      class="app-sider"
     >
       <!-- logo部分 -->
       <app-logo :collapsed="collapsed" />
@@ -38,7 +37,7 @@
         
       </a-layout-header>
       <!-- content -->
-      <a-layout-content> 
+      <a-layout-content class="layout-content"> 
         <tabs-content />
       </a-layout-content>
     </a-layout>
@@ -78,11 +77,10 @@ export default {
 </script>
 <style lang="less">
 .app-wapper {
-  .app-sider {
-    left: 0;
-    height: 100vh;
-    overflow: auto;
-  }
+   display: flex;
+  overflow: hidden;
+  height: 100vh;
+  
   .app-header {
     padding: 0;
     background: #fff;
@@ -98,6 +96,9 @@ export default {
       justify-content: space-between;
       padding: 0 16px;
     }
+  }
+  .layout-content {
+    flex: none;
   }
 }
 </style>

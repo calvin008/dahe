@@ -15,9 +15,9 @@
             ></a-tab-pane>
          </a-tabs>
         </div>
-        <a-card>
+        <div>
             <router-view></router-view>
-        </a-card>
+        </div>
   </div>
 </template>
 

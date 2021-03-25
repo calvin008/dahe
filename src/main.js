@@ -5,9 +5,14 @@ import {setupAntd} from './ant-design-vue'
 import store from './store'
 import '../mock/mock'
 import './permission'
+
+
+
 const  app = createApp(App)
 
 setupAntd(app)
 app.use(store)
 app.use(router)
 app.mount('#app')
+
+

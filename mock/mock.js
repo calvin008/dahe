@@ -1,4 +1,5 @@
 import Mock from 'mockjs'
+import data from './icon'
 
 /* login */
 Mock.mock(
@@ -89,30 +90,30 @@ Mock.mock(
             ],
           },
           {
-            name:'test',
+            name:'echart',
             meta:{
               icon:'icon-inspection-fill',
-              title:'test'
+              title:'echart'
             },
             children:[
               {
-                name:'Test1',
+                name:'Bar',
                 meta: {
-                  title: 'test1',
+                  title: 'bar',
                   icon: 'icon-help1',
                 },
               },
               {
-                name:'Test2',
+                name:'Line',
                 meta: {
-                  title: 'test2',
+                  title: 'line',
                   icon: 'icon-help1',
                 },
               },
               {
-                name:'Test3',
+                name:'Pie',
                 meta: {
-                  title: 'test3',
+                  title: 'pie',
                   icon: 'icon-help1',
                 },
               },
@@ -175,4 +176,17 @@ Mock.mock(
    
   }
 
+)
+
+/* getIconList */
+Mock.mock(
+  '/api/getIconList',
+  'get',
+  () =>{
+    return {
+      code : 200,
+      msg: 'success',
+      data: data
+    }
+  }
 )

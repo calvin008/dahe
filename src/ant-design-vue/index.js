@@ -1,4 +1,6 @@
-import { Form, Input, Button, Layout, Menu, Row, Col, Dropdown, Avatar, Tabs, Table } from 'ant-design-vue';
+import { Form, Input, Button, Layout, Menu, Row, Col,
+        Dropdown, Avatar, Tabs, Table, Alert, Card, List, 
+        Pagination, Divider,Popconfirm, Modal, Select} from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 
 const components= [
@@ -12,7 +14,15 @@ const components= [
     Dropdown,
     Avatar,
     Tabs,
-    Table
+    Table,
+    Alert,
+    Card,
+    List,
+    Pagination,
+    Divider,
+    Popconfirm,
+    Modal,
+    Select
 ]
 export function setupAntd(app) {
     components.forEach(component => {
