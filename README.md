@@ -2,7 +2,7 @@
 
 ## ![](https://github.com/calvin008/vue3-admin/blob/master/show.gif)
 
-如需购买视频课程,可以通过此优惠卷购买:https://ke.qq.com/p/06XXaadT6KVkQgEw?tuin=113a0b7a
+如需购买视频教学课程,可以通过此优惠卷购买:https://ke.qq.com/p/06XXaadT6KVkQgEw?tuin=113a0b7a
 
 **版本信息**
 
