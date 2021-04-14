@@ -1,5 +1,7 @@
 # vue3-admin
 
+账号 admin 密码 123456
+
 ## ![](https://github.com/calvin008/vue3-admin/blob/master/show.gif)
 
 
