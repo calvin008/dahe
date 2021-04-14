@@ -1,6 +1,8 @@
 # vue3-admin
 
-账号 admin 密码 123456
+管理员 admin 密码 123456
+编辑者 editor 密码 123456
+权限不同，根据vue-router4的addRoute分配路由权限
 
 ## ![](https://github.com/calvin008/vue3-admin/blob/master/show.gif)
 
