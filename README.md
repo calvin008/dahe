@@ -6,7 +6,7 @@
 
 ## ![](https://github.com/calvin008/vue3-admin/blob/master/show.gif)
 
-
+如需看视频教程可以看这里 https://ke.qq.com/p/z6XXaagIY3UhEYbp?tuin=113a0b7a
 
 **版本信息**
 
