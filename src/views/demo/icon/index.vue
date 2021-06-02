@@ -17,7 +17,7 @@
       :span="4"
       >
         <div class="icon-img">
-          <icon-font style="font-size: 36px" :type="item.font_class" />
+          <IconFont style="font-size: 36px" :type="item.font_class" />
         </div>
           
         
