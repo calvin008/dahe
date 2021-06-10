@@ -12,13 +12,14 @@ router.beforeEach(async (to, from, next) => {
   } else if (!token) {
     next('/login')
   } else if (!hasRoles) {
-
+    
     let { data } = await store.dispatch('user/GetInfo', token)
     const accessedRoutes = await store.dispatch('asyncRouter/generateRoutes', data.roles)
     accessedRoutes.forEach((item) => {
       router.addRoute(item)
     })
-    next()
+    next(to.path)
+    
   } else {
     next()
   }
