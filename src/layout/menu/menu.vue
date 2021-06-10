@@ -40,6 +40,7 @@
 </template>
 
 <script>
+import{ref} from 'vue'
 import IconFont from "@/assets/iconfont/icon";
 import {computed} from "vue"
 import {useStore} from "vuex"
@@ -59,7 +60,7 @@ export default {
     const store = useStore()
     const router = useRouter()
     const menus = computed(()=> store.getters.menus)
-
+     const selectedKeys = ref(['1']);
     const clickMenuItem = (key) =>{
       if(router.hasRoute(key)){
         router.push({name:key})
@@ -71,6 +72,7 @@ export default {
 
     return {
       menus,
+      selectedKeys,
       clickMenuItem
     }
   }
