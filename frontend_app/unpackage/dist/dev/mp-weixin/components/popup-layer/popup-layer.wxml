@@ -1,0 +1,1 @@
+<view><view hidden="{{!a}}" catchtouchmove="{{b}}" class="popup-layer" bindtap="{{c}}"></view><view class="popup-content" style="{{d}}"><slot name="content"></slot></view></view>

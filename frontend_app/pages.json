@@ -1,0 +1,63 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "王大合茶餐厅",
+				"disableScroll": true
+			}
+		},{
+			"path": "pages/order/order",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},{
+			"path": "pages/my/my",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#f1f8fa"
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#343434",
+		"borderStyle": "white",
+		"backgroundColor": "#F7F7F7",
+		"fontSize": "16px",
+		"iconWidth": "30px",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/tabbar/index.png",
+				"selectedIconPath": "static/images/tabbar/index_selected.png",
+				"text": "点单"
+			},{
+				"pagePath": "pages/order/order",
+				"iconPath": "static/images/tabbar/order.png",
+				"selectedIconPath": "static/images/tabbar/order_selected.png",
+				"text": "订单"
+			},{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/images/tabbar/my.png",
+				"selectedIconPath": "static/images/tabbar/my_selected.png",
+				"text": "我的"
+			}
+		]
+		
+	},
+	"uniIdRouter": {}
+}

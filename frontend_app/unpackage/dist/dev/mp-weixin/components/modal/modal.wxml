@@ -1,0 +1,1 @@
+<view catchtouchmove="{{e}}"><view style="{{'width:' + a + ';' + ('padding:' + b) + ';' + ('border-radius:' + c)}}" class="{{['modal-box', d]}}"><view><slot></slot></view></view></view>

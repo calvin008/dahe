@@ -1,0 +1,238 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 按钮颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.modal-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: auto;
+  background: #fff;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+.modal-scale {
+  transform: translate(-50%, -50%) scale(0);
+}
+.modal-normal {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+.modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.mask-show {
+  visibility: visible;
+  opacity: 1;
+}
+.modal-title {
+  text-align: center;
+  font-size: 34rpx;
+  color: #333;
+  padding-top: 20rpx;
+  font-weight: bold;
+}
+.modal-content {
+  color: #999;
+  font-size: 28rpx;
+  padding-top: 20rpx;
+  padding-bottom: 60rpx;
+}
+.mtop {
+  margin-top: 30rpx;
+}
+.mbtm {
+  margin-bottom: 30rpx;
+}
+.modalBtn-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-column {
+  flex-direction: column;
+}
+.modal-btn {
+  width: 46%;
+  height: 68rpx;
+  line-height: 68rpx;
+  position: relative;
+  border-radius: 60rpx;
+  font-size: 28rpx;
+  overflow: visible;
+  margin-left: 0;
+  margin-right: 0;
+}
+.modal-btn.btn-default {
+  font-size: 28rpx;
+}
+.modal-btn.btn-lg {
+  font-size: 32rpx;
+}
+.modal-btn.btn-sm {
+  font-size: 24rpx;
+}
+.modal-btn::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  transform-origin: 0 0;
+  transform: scale(0.5, 0.5);
+  left: 0;
+  top: 0;
+  border-radius: 60rpx;
+}
+.btn-width {
+  width: 80% !important;
+}
+.primary {
+  background: #97AF13;
+  color: #fff;
+}
+.primary-hover {
+  background: #97AF13;
+  color: #e5e5e5;
+}
+.primary-outline {
+  color: #97AF13;
+  background: none;
+}
+.primary-outline::after {
+  border: 1px solid #97AF13;
+}
+.danger {
+  background: #ed3f14;
+  color: #fff;
+}
+.danger-hover {
+  background: #d53912;
+  color: #e5e5e5;
+}
+.danger-outline {
+  color: #ed3f14;
+  background: none;
+}
+.danger-outline::after {
+  border: 1px solid #ed3f14;
+}
+.red {
+  background: #e41f19;
+  color: #fff;
+}
+.red-hover {
+  background: #c51a15;
+  color: #e5e5e5;
+}
+.red-outline {
+  color: #e41f19;
+  background: none;
+}
+.red-outline::after {
+  border: 1px solid #e41f19;
+}
+.warning {
+  background: #ff7900;
+  color: #fff;
+}
+.warning-hover {
+  background: #e56d00;
+  color: #e5e5e5;
+}
+.warning-outline {
+  color: #ff7900;
+  background: none;
+}
+.warning-outline::after {
+  border: 1px solid #ff7900;
+}
+.green {
+  background: #19be6b;
+  color: #fff;
+}
+.green-hover {
+  background: #16ab60;
+  color: #e5e5e5;
+}
+.green-outline {
+  color: #19be6b;
+  background: none;
+}
+.green-outline::after {
+  border: 1px solid #19be6b;
+}
+.white {
+  background: #fff;
+  color: #333;
+}
+.white-hover {
+  background: #f7f7f9;
+  color: #666;
+}
+.white-outline {
+  color: #333;
+  background: none;
+}
+.white-outline::after {
+  border: 1px solid #333;
+}
+.gray {
+  background: #ededed;
+  color: #999;
+}
+.gray-hover {
+  background: #d5d5d5;
+  color: #898989;
+}
+.gray-outline {
+  color: #999;
+  background: none;
+}
+.gray-outline::after {
+  border: 1px solid #999;
+}
+.outline-hover {
+  opacity: 0.6;
+}
+.circle-btn {
+  border-radius: 40rpx !important;
+}
+.circle-btn::after {
+  border-radius: 80rpx !important;
+}
