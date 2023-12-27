@@ -1,9 +1,11 @@
 <div align="center">
   <img alt="V3 Admin Vite Logo" width="120" height="120" src="https://document-1255680412.cos.ap-guangzhou.myqcloud.com/typora/%E6%9C%AA%E6%A0%87%E9%A2%98-2.png">
-  <h1>Dahe Multi-store practice</h1>
+  <h1>Dahe Multi-store</h1>
   <span>English | <a href="./README.md">中文</a></span>
 </div>
+
 ## 🌟 Introduction
+
 This is a very suitable practical web project for learning, multi-store take-out small program. The project is divided into three parts. The back-end API is developed by springboot3, based on java17. The front-end consists of two parts: the small program part and the back-end management, both of which are developed based on vue3 syntax. The back-end management uses self-developed lightweight RBAC management, which controls the display and usage permissions of pages, menus, and custom directives by controlling page routing, menu menus, and custom directives.
 
 ## 📺 Bilibili video tutorials
