@@ -8,7 +8,7 @@
 ## ⚡ 介绍
 这是一个非常适合学习的实战web项目,多门店点餐小程序,项目分三个部分,后端api是springboot3开发的,基于java17,前端有小程序部分和后台管理两个部分组成,都是基于vue3语法开发,后台管理使用自研的轻量级rbac管理,通过控制页面的路由,menu菜单,和自定义指令来控制页面和按钮的显示使用权限
 
- ## 📺 视频教程
+ ## 📺 b站视频教程
 
 | [前端后台管理](https://www.bilibili.com/video/BV1Su411q71n/?vd_source=3d16cd7d6ebde0316897b8802e5cde9b) | vue3+ts+elementPlus     |
 | -------------- | ------------ |
@@ -36,4 +36,4 @@ npm run dev
 ```
 
 ## ✔️ 购买课程
-(如需可以购买视频课程)[https://item.taobao.com/item.htm?ft=t&id=729843915509]
+[如需可以购买视频课程](https://item.taobao.com/item.htm?ft=t&id=729843915509)
