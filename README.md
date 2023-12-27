@@ -1,6 +1,6 @@
                                                                                                                        ## Dahe多门店实战 
 <div align="center">
-  <img alt="V3 Admin Vite Logo" width="120" height="120" src="./src/assets/layouts/logo.png">
+  <img alt="V3 Admin Vite Logo" width="120" height="120" src="https://document-1255680412.cos.ap-guangzhou.myqcloud.com/typora/%E6%9C%AA%E6%A0%87%E9%A2%98-2.png">
   <h1>Dahe多门店实战</h1>
   <span>中文 | <a href="./README_EN.md">English</a></span>
 </div>
