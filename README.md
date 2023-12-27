@@ -1,6 +1,7 @@
-<div align="center"># Dahe多门店实战 </div>
+                                                                                                                       ## Dahe多门店实战 
+<h1 align = "center">Dahe多门店点餐</h1>
 
-<div align="center">中文 | [English](README_EN.md)</div>
+中文 | [English](README_EN.md)
 
 
 这是一个非常适合学习的实战web项目,多门店点餐小程序,项目分三个部分,后端api是springboot3开发的,基于java17,前端有小程序部分和后台管理两个部分组成,都是基于vue3语法开发,后台管理使用自研的轻量级rbac管理,通过控制页面的路由,menu菜单,和自定义指令来控制页面和按钮的显示使用权限
