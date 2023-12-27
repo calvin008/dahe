@@ -1,4 +1,6 @@
 # Dahe admin
+**Read this in other languages: [English](README.md), [中文](README_zh.md).**
+
 
 This is a highly practical web project ideal for learning: a multi-store food ordering mini-program. The project is divided into three parts. The backend API is developed with Spring Boot 3, based on Java 17. The frontend consists of two parts: the mini-program and a backend management system, both developed using Vue 3 syntax. The backend management utilizes a proprietary lightweight RBAC (Role-Based Access Control) system that manages the display and usage permissions of pages and buttons through the control of routes, menu items, and custom directives.
 
