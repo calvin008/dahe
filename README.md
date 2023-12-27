@@ -1,4 +1,4 @@
-                                                                                                      
+
 <div align="center">
   <img alt="V3 Admin Vite Logo" width="120" height="120" src="https://document-1255680412.cos.ap-guangzhou.myqcloud.com/typora/%E6%9C%AA%E6%A0%87%E9%A2%98-2.png">
   <h1>大合家多门店实战</h1>
@@ -10,33 +10,13 @@
 
  ## 📺 b站视频教程
 
-<<<<<<< HEAD
-**version:**
 
-| frontend admin | vue3+ts      |
 =======
 | [前端后台管理](https://www.bilibili.com/video/BV1Su411q71n/?vd_source=3d16cd7d6ebde0316897b8802e5cde9b) | vue3+ts+elementPlus     |
->>>>>>> 43d048ebcafe050cc2a1f91e9502b20d932f2a43
-| -------------- | ------------ |
 | [前端小程序](https://www.bilibili.com/video/BV1kN411K7aK/?vd_source=3d16cd7d6ebde0316897b8802e5cde9b)   | uni-app      |
 | [后端api接口](https://www.bilibili.com/video/BV1Fk4y157Wh/?vd_source=3d16cd7d6ebde0316897b8802e5cde9b)    | springboot 3 |
 
-<<<<<<< HEAD
-**frontend admin:**
 
-
-
-![frontend admin](https://document-1255680412.cos.ap-guangzhou.myqcloud.com/typora/%E9%A1%B9%E7%9B%AE%E9%A2%84%E8%A7%88.gif)
-
-
-
-**frontend app**:
-
-
-
-![frontend app](https://document-1255680412.cos.ap-guangzhou.myqcloud.com/typora/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A2%84%E8%A7%88.jpg)
-=======
->>>>>>> 43d048ebcafe050cc2a1f91e9502b20d932f2a43
 
 
 ## 前端后台管理:
